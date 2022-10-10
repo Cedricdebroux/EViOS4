@@ -48,7 +48,6 @@ class AddViewController: UIViewController {
         let newExpense = Entity(context: context)
         newExpense.name = nameInputTexField.text
         newExpense.price = floatValue!
-        
         commitData()
         
     }
@@ -78,6 +77,7 @@ class AddViewController: UIViewController {
     
     @objc func dateChange(){
       dateInput = datePicker.date
+        
     }
 
 }
